@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Prompt);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  background: url(../images/wallpaper.jpg) no-repeat, center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+nav ul {
+   position: fixed;
+   margin: 0;
+   padding: 0;
+
+}
+nav ul li {
+     margin: 0;
+     padding: 0;
+     display: block;
+     height: 50px;
+     font-family: "Prompt";
+     position: relative;
+     z-index: 999;
+     -webkit-animation: FadeIn 2s;
+     animation: FadeIn 2s;
+     animation-fill-mode: forwards;
+     opacity: 0;
+}
+
+nav ul li:hover {
+   cursor: pointer;
+
+}
+nav ul li a {
+  width: 50px;
+  position: absolute;
+  opacity: .4;
+  top: 150%;
+  line-height: 2.5em;
+	color: #fff;
+  display: block;
+  height: 50px;
+  margin: 0;
+  padding: 0 3em 0 1.5em;
+  z-index: 999;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  overflow: hidden;
+  //box-shadow:2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+/* http://www.colourlovers.com/ */
+nav ul li:nth-child(1) a {
+    background: #313B72;
+    box-shadow:2px 0px 4px #313B72;
+}
+nav ul li:nth-child(2) a {
+    background: #3B8686;
+    box-shadow:2px 0px 4px #3B8686;
+}
+nav ul li:nth-child(3) a {
+    background: #F7B267;
+    box-shadow:2px 0px 4px #F7B267;
+}
+nav ul li:nth-child(4) a {
+    background: #CC333F;
+    box-shadow:2px 0px 4px #CC333F;
+}
+nav ul li a:hover {
+   opacity: 1.0;
+}
+/* animation delay for list item */
+nav ul li:nth-child(1) {
+   -webkit-animation-delay: .25;
+   animation-delay: .25s;
+}
+
+nav ul li:nth-child(2) {
+   -webkit-animation-delay: .5s;
+   animation-delay: .5s;
+}
+
+nav ul li:nth-child(3) {
+   -webkit-animation-delay: 0.75s;
+   animation-delay: 0.75s;
+}
+
+nav ul li:nth-child(4) {
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+
+/* fade in effect */
+@-webkit-keyframes FadeIn {
+  0%   {opacity: 0;}
+  50%  {opacity: .85;}
+  100% {opacity: 1;}
+}
+
+@keyframes FadeIn {
+  0%   {opacity: 0;}
+  50%  {opacity: .85;}
+  100% {opacity: 1;}
+}
